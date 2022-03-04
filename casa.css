@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 500px;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+
+h2, h1{
+    font-family: 'Ephesis', cursive;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+
+header, nav a{
+    color: white;
+}
+header a:hover {
+    background-color: #7bafc9;
+}
+
+
+nav, a{
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+
+nav>a:last-of-type{
+    border: 2px solid white;
+}
+
+#titre{
+    text-align: center;
+}
+
+
+section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,1fr); */
+}
+
+
+figure{
+    position: relative;
+    width: 30%;
+    margin: auto;
+    border: 1px solid #ddd;
+    margin: 15px;
+}
+
+
+span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+figure img{
+    width: 100%;
+}
+
+
+body > div > p:first-of-type{
+    padding: 15px;
+}
+
+body > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7bafc9;
+    width: 100%;
+}
+
+figure span{
+    background-color: white;
+    padding: 10px;
+}
+
+
+figure p{
+    font-size: 12px;
+}
+
+figure h3{
+    font-size: 17px;
+}
+
+
+footer{
+    display: flex;
+    margin: auto;
+    background-color: #7bafc9;
+}
+
+ul{ 
+    list-style-type: none;
+    width: 20%;
+    margin: 15px;
+}
+
+footer div{
+    width: 40%;
+}
+
+li{
+    padding: 5%;
+    color: white;
+}
+
+footer p{
+    padding: 5%;
+    color: white;
+    
+}
+
+
+.sociaux{
+    color: white;
+    
+}
+
+
+
+
+@media screen  and (max-width: 767px ){
+    #menu{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    figure{
+        width: 80%;
+    }
+
+    nav{
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 760px) and (max-width: 992px){
+    #menu{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    figure{
+        width: 40%;
+    }
+
+
+}
+
